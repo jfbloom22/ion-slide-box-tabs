@@ -246,6 +246,12 @@ var slidingTabsDirective = angular.module("ionic").directive('ionSlideTabs', ['$
             scope.onSlideChange = function (slideIndex) {
                 slideToCurrentPosition();
             };
+            
+            //custom broadcast listener
+            scope.$on('slideChange', function (event, index) {
+              ionicSlideBoxDelegate.slide(index);
+              slideToCurrentPosition();
+            });
 
             scope.onSlideMove = function () {
                 var scrollDiv = slider[0].getElementsByClassName("slider-slide");

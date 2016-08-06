@@ -50,12 +50,13 @@ ion-slide:nth-child(2n) {
     position: absolute;
     background: rgba(56, 147, 245, 0.8);
     border-radius: 100%;
+    opacity: 0.0;
     transform: scale(0);
 }
 
 .slidingTabs ul li .ink.animate {
-    -webkit-animation: ripple 0.65s linear;
-    animation: ripple 0.65s linear;
+/*     -webkit-animation: ripple 0.65s linear; */
+/*     animation: ripple 0.65s linear; */
 }
 
 .slidingTabs .tab-indicator-wrapper {
